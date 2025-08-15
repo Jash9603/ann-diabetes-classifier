@@ -1,7 +1,7 @@
 # Diabetes Prediction with ANN & Hyperparameter Tuning
 
 This project implements a **Sequential Artificial Neural Network (ANN)** to predict diabetes using the **PIMA Indians Diabetes Dataset**.  
-The focus of this project is **learning how to perform hyperparameter tuning** using **Keras Tuner (Random Search)**.  
+The focus of this project is **learning how to perform hyperparameter tuning** using **Keras Tuner (Random Search) And GridSearch**.  
 
 ⚠ **Note:**  
 This is a *learning project* for understanding hyperparameter tuning concepts.  
@@ -54,13 +54,18 @@ pip install -r requirements.txt
 - Open diabetes_ann.ipynb in Google Colab or Jupyter Notebook
 - Run cells step-by-step to see the preprocessing, model creation, and tuning
 
-# 📊 Hyperparameter Tuning Details
+# 📊 Hyperparameter Tuning with keras-tuner Details
 
 - We use Keras Tuner to explore:
 - Units in each layer (8–128)
 - Number of layers (2–5)
 - Dropout rate (0.0–0.5)
 - Learning rate (1e-4 to 1e-1)
+
+# 📊 Hyperparameter Tuning with GridSearch Details
+- Layers List : [16,32], [16, 32, 16], [16, 8, 16, 32]
+- Activation ['sigmoid','relu']
+- batch_size [125,256]
 
 # 🧠 Learning Outcomes
 
